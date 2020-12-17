@@ -21,17 +21,19 @@ hbs.registerPartials(partialsPath);
 // Setup static directory to use
 app.use(express.static(publicDirectoryPath));
 
+const name = "Amir Dar";
+
 app.get('/', (req, res) => {
     res.render('index', {
         title : 'Weather App',
-        name: 'Amir'
+        name
     });
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
         title : 'About Page',
-        name: 'Amir'
+        name
     });
     
 })
@@ -40,7 +42,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         helpText : 'This is an help message',
         title : 'Help Page',
-        name: 'Amir'
+        name
     });
     
 })
@@ -76,7 +78,7 @@ app.get('/help/*', (req, res) => {
     res.render('404', {
         errorMsg : 'Help article not found',
         title : '404',
-        name: 'Amir'
+        name
     });
 })
 
@@ -84,7 +86,7 @@ app.get('*', (req, res) => {
     res.render('404', {
         errorMsg : 'Page not found',
         title : '404',
-        name: 'Amir'
+        name
     });
 })
 
