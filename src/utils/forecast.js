@@ -17,7 +17,7 @@ const forecast = (latitude, longitude, callback) => {
           ${currentWeather.weather_descriptions[0]}.
           It is currently ${currentWeather.temperature} degree out.
           It feels like ${currentWeather.feelslike} degree.
-          The humidity is ${currentWeather.humidity}.
+          The humidity is ${currentWeather.humidity} %.
           Wind speed is ${currentWeather.wind_speed} , wind degree is ${currentWeather.wind_degree} and wind direction is ${currentWeather.wind_dir}.
           (last observation time was ${currentWeather.observation_time}).
         `;
