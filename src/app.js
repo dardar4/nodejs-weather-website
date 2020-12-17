@@ -87,5 +87,5 @@ app.get('*', (req, res) => {
 })
 
 app.listen(8000, () => {
-    console.log('server is up...');
+    console.log('Server is up and running...');
 });
