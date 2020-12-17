@@ -8,7 +8,7 @@ messageOne.textContent = "";
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    messageOne.textContent = "Loading...";
+    messageOne.textContent = "Loading....";
     messageTwo.textContent = "";
 
     fetch(`/weather?address=${searchTextBox.value}`).then((response) => {
